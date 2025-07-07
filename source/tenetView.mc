@@ -26,13 +26,13 @@ class tenetView extends WatchUi.WatchFace {
         // Get and show the current time
         var clockTime = System.getClockTime();
         var hour12 = (clockTime.hour % 12 == 0) ? 12 : clockTime.hour % 12;
-        var timeString = Lang.format("$1$:$2$", [hour12, clockTime.min.format("%02d")]);
+        var timeString = Lang.format("$1$:$2$", [hour12.format("%02d"), clockTime.min.format("%02d")]);        
         var view = View.findDrawableById("TimeLabel") as Text;
 
         var font = Graphics.FONT_SYSTEM_NUMBER_THAI_HOT; 
         view.setFont(font);
 
-        view.setColor(Graphics.COLOR_BLUE);
+        view.setColor(Graphics.COLOR_RED);
         view.setText(timeString);
 
         // Draw dial bitmap with Arabic numerals
