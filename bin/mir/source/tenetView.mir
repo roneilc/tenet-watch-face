@@ -1,0 +1,616 @@
+[ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 6; @symbol_classdef = [tenetView,6,6,15]; @symbol_extends<0> = [WatchUi,6,24,31]; @symbol_extends<1> = [WatchFace,6,32,41]; ]
+class tenetView extends WatchUi.WatchFace {
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    function initialize() as Void {
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_8_26_10_4_start:
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 9 8 ]
+        symbol [ WatchFace %tmp.2 9 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 9 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_8_26_10_4_stop:
+    }
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 13; @symbol_functiondef = [onLayout,13,13,21]; @symbol_param<0> = [dc,13,22,24]; @symbol_param<0>_type<0> = [Dc,13,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_13_40_15_4_start:
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 14 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 14 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 14 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 14 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ WatchFace %tmp.6 14 30 39 ];
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 14 40 42 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_13_40_15_4_stop:
+    }
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 20; @symbol_functiondef = [onShow,20,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 24; @symbol_functiondef = [onUpdate,24,13,21]; @symbol_param<0> = [dc,24,22,24]; @symbol_param<0>_type<0> = [Dc,24,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start:
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 25 8 ]
+        symbol [ View %tmp.2 25 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ onUpdate %tmp.3 25 13 21 ];
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 25 22 24 ];
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 27 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 27 12 21 ];
+        symbol [ System %tmp.5 27 24 30 ];
+        %tmp.5 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.6 27 31 43 ];
+        %tmp.6 = getv function %tmp.5 :getClockTime;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        lputv %clockTime.1 %tmp.7;
+        symbol [ clockTime %clockTime.1 27 12 21 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 28 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %hour12.2 = local;
+        symbol [ hour12 %hour12.2 28 12 18 ];
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_begin:
+        %tmp.8 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.8 28 22 31 ];
+        symbol [ hour %tmp.9 28 32 36 ];
+        %tmp.9 = getv %tmp.8 :hour;
+        %tmp.10 = 12;
+        %tmp.11 = mod %tmp.9 %tmp.10;
+        %tmp.12 = 0;
+        %tmp.13 = eq %tmp.11 %tmp.12;
+        bf %tmp.13 @_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_false;
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_true:
+        %tmp.14 = 12;
+        push %tmp.14;
+        goto @_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_end;
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_false:
+        %tmp.15 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.15 28 55 64 ];
+        symbol [ hour %tmp.16 28 65 69 ];
+        %tmp.16 = getv %tmp.15 :hour;
+        %tmp.17 = 12;
+        %tmp.18 = mod %tmp.16 %tmp.17;
+        push %tmp.18;
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_end:
+        %tmp.19 = phi [%tmp.13 @_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_begin] [%tmp.14 @_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_true] [%tmp.18 @_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_false] [%tmp.19 @_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_28_21_28_72_end];
+        lputv %hour12.2 %tmp.19;
+        symbol [ hour12 %hour12.2 28 12 18 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 29 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %timeString.3 = local;
+        symbol [ timeString %timeString.3 29 12 22 ];
+        symbol [ Lang %tmp.20 29 25 29 ];
+        %tmp.20 = getm $.Toybox.Lang;
+        symbol [ format %tmp.21 29 30 36 ];
+        %tmp.21 = getv function %tmp.20 :format;
+        %tmp.22 = "$1$:$2$";
+        %tmp.23 = newa 2;
+        %tmp.24 = lgetv %hour12.2;
+        symbol [ hour12 %tmp.24 29 49 55 ];
+        %tmp.25 = dup %tmp.23;
+        %tmp.26 = aputv %tmp.25 0 %tmp.24;
+        %tmp.27 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.27 29 57 66 ];
+        symbol [ min %tmp.28 29 67 70 ];
+        %tmp.28 = getv %tmp.27 :min;
+        symbol [ format %tmp.29 29 71 77 ];
+        %tmp.29 = getv function %tmp.28 :format;
+        %tmp.30 = "%02d";
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        %tmp.32 = dup %tmp.26;
+        %tmp.33 = aputv %tmp.32 1 %tmp.31;
+        %tmp.34 = invoke %tmp.20 %tmp.21(%tmp.22, %tmp.33);
+        lputv %timeString.3 %tmp.34;
+        symbol [ timeString %timeString.3 29 12 22 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 30 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %view.4 = local;
+        symbol [ view %view.4 30 12 16 ];
+        symbol [ View %tmp.36 30 19 23 ];
+        %tmp.36 = getv ? :View;
+        symbol [ findDrawableById %tmp.37 30 24 40 ];
+        %tmp.37 = getv function %tmp.36 :findDrawableById;
+        %tmp.38 = "TimeLabel";
+        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
+        %tmp.40 = as %tmp.39 Text;
+        symbol [ Text %tmp.40 30 57 61 ];
+        lputv %view.4 %tmp.40;
+        symbol [ view %view.4 30 12 16 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 32 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %font.5 = local;
+        symbol [ font %font.5 32 12 16 ];
+        symbol [ Graphics %tmp.41 32 19 27 ];
+        %tmp.41 = getm $.Toybox.Graphics;
+        symbol [ FONT_SYSTEM_NUMBER_THAI_HOT %tmp.42 32 28 55 ];
+        %tmp.42 = getv %tmp.41 :FONT_SYSTEM_NUMBER_THAI_HOT;
+        lputv %font.5 %tmp.42;
+        symbol [ font %font.5 32 12 16 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 33 8 ]
+        %tmp.43 = lgetv %view.4;
+        symbol [ view %tmp.43 33 8 12 ];
+        symbol [ setFont %tmp.44 33 13 20 ];
+        %tmp.44 = getv function %tmp.43 :setFont;
+        %tmp.45 = lgetv %font.5;
+        symbol [ font %tmp.45 33 21 25 ];
+        invoke %tmp.43 %tmp.44(%tmp.45);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 35 8 ]
+        %tmp.46 = lgetv %view.4;
+        symbol [ view %tmp.46 35 8 12 ];
+        symbol [ setColor %tmp.47 35 13 21 ];
+        %tmp.47 = getv function %tmp.46 :setColor;
+        symbol [ Graphics %tmp.48 35 22 30 ];
+        %tmp.48 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.49 35 31 41 ];
+        %tmp.49 = getv %tmp.48 :COLOR_BLUE;
+        invoke %tmp.46 %tmp.47(%tmp.49);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 36 8 ]
+        %tmp.50 = lgetv %view.4;
+        symbol [ view %tmp.50 36 8 12 ];
+        symbol [ setText %tmp.51 36 13 20 ];
+        %tmp.51 = getv function %tmp.50 :setText;
+        %tmp.52 = lgetv %timeString.3;
+        symbol [ timeString %tmp.52 36 21 31 ];
+        invoke %tmp.50 %tmp.51(%tmp.52);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 39 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %dialBmp.6 = local;
+        symbol [ dialBmp %dialBmp.6 39 12 19 ];
+        symbol [ WatchUi %tmp.53 39 22 29 ];
+        %tmp.53 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.54 39 30 42 ];
+        %tmp.54 = getv function %tmp.53 :loadResource;
+        symbol [ Rez %tmp.56 39 43 46 ];
+        %tmp.56 = getv ? :Rez;
+        symbol [ Drawables %tmp.57 39 47 56 ];
+        %tmp.57 = getv %tmp.56 :Drawables;
+        symbol [ ArabicDial %tmp.58 39 57 67 ];
+        %tmp.58 = getv %tmp.57 :ArabicDial;
+        %tmp.59 = invoke %tmp.53 %tmp.54(%tmp.58);
+        %tmp.60 = as %tmp.59 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.60 39 72 79 ];
+        symbol [ BitmapResource %tmp.60 39 80 94 ];
+        lputv %dialBmp.6 %tmp.60;
+        symbol [ dialBmp %dialBmp.6 39 12 19 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 42 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %bmpX.7 = local;
+        symbol [ bmpX %bmpX.7 42 12 16 ];
+        %tmp.61 = lgetv %dc;
+        symbol [ dc %tmp.61 42 20 22 ];
+        symbol [ getWidth %tmp.62 42 23 31 ];
+        %tmp.62 = getv function %tmp.61 :getWidth;
+        %tmp.63 = invoke %tmp.61 %tmp.62();
+        %tmp.64 = lgetv %dialBmp.6;
+        symbol [ dialBmp %tmp.64 42 36 43 ];
+        symbol [ getWidth %tmp.65 42 44 52 ];
+        %tmp.65 = getv function %tmp.64 :getWidth;
+        %tmp.66 = invoke %tmp.64 %tmp.65();
+        %tmp.67 = sub %tmp.63 %tmp.66;
+        %tmp.68 = 2;
+        %tmp.69 = div %tmp.67 %tmp.68;
+        lputv %bmpX.7 %tmp.69;
+        symbol [ bmpX %bmpX.7 42 12 16 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 43 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %bmpY.8 = local;
+        symbol [ bmpY %bmpY.8 43 12 16 ];
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 43 20 22 ];
+        symbol [ getHeight %tmp.71 43 23 32 ];
+        %tmp.71 = getv function %tmp.70 :getHeight;
+        %tmp.72 = invoke %tmp.70 %tmp.71();
+        %tmp.73 = lgetv %dialBmp.6;
+        symbol [ dialBmp %tmp.73 43 37 44 ];
+        symbol [ getHeight %tmp.74 43 45 54 ];
+        %tmp.74 = getv function %tmp.73 :getHeight;
+        %tmp.75 = invoke %tmp.73 %tmp.74();
+        %tmp.76 = sub %tmp.72 %tmp.75;
+        %tmp.77 = 2;
+        %tmp.78 = div %tmp.76 %tmp.77;
+        lputv %bmpY.8 %tmp.78;
+        symbol [ bmpY %bmpY.8 43 12 16 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 44 8 ]
+        %tmp.79 = lgetv %dc;
+        symbol [ dc %tmp.79 44 8 10 ];
+        symbol [ drawBitmap %tmp.80 44 11 21 ];
+        %tmp.80 = getv function %tmp.79 :drawBitmap;
+        %tmp.81 = lgetv %bmpX.7;
+        symbol [ bmpX %tmp.81 44 22 26 ];
+        %tmp.82 = lgetv %bmpY.8;
+        symbol [ bmpY %tmp.82 44 28 32 ];
+        %tmp.83 = lgetv %dialBmp.6;
+        symbol [ dialBmp %tmp.83 44 34 41 ];
+        invoke %tmp.79 %tmp.80(%tmp.81, %tmp.82, %tmp.83);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 47 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %centerX.9 = local;
+        symbol [ centerX %centerX.9 47 12 19 ];
+        %tmp.84 = lgetv %dc;
+        symbol [ dc %tmp.84 47 22 24 ];
+        symbol [ getWidth %tmp.85 47 25 33 ];
+        %tmp.85 = getv function %tmp.84 :getWidth;
+        %tmp.86 = invoke %tmp.84 %tmp.85();
+        %tmp.87 = 2;
+        %tmp.88 = div %tmp.86 %tmp.87;
+        lputv %centerX.9 %tmp.88;
+        symbol [ centerX %centerX.9 47 12 19 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 48 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %centerY.10 = local;
+        symbol [ centerY %centerY.10 48 12 19 ];
+        %tmp.89 = lgetv %dc;
+        symbol [ dc %tmp.89 48 22 24 ];
+        symbol [ getHeight %tmp.90 48 25 34 ];
+        %tmp.90 = getv function %tmp.89 :getHeight;
+        %tmp.91 = invoke %tmp.89 %tmp.90();
+        %tmp.92 = 2;
+        %tmp.93 = div %tmp.91 %tmp.92;
+        lputv %centerY.10 %tmp.93;
+        symbol [ centerY %centerY.10 48 12 19 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 50 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %radius.11 = local;
+        symbol [ radius %radius.11 50 12 18 ];
+        %tmp.94 = 130;
+        lputv %radius.11 %tmp.94;
+        symbol [ radius %radius.11 50 12 18 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 51 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %hourAngle.12 = local;
+        symbol [ hourAngle %hourAngle.12 51 12 21 ];
+        %tmp.95 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.95 51 26 35 ];
+        symbol [ hour %tmp.96 51 36 40 ];
+        %tmp.96 = getv %tmp.95 :hour;
+        %tmp.97 = 12;
+        %tmp.98 = mod %tmp.96 %tmp.97;
+        %tmp.99 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.99 51 49 58 ];
+        symbol [ min %tmp.100 51 59 62 ];
+        %tmp.100 = getv %tmp.99 :min;
+        %tmp.101 = 60.0;
+        %tmp.102 = div %tmp.100 %tmp.101;
+        %tmp.103 = add %tmp.98 %tmp.102;
+        %tmp.104 = 30;
+        %tmp.105 = mul %tmp.103 %tmp.104;
+        lputv %hourAngle.12 %tmp.105;
+        symbol [ hourAngle %hourAngle.12 51 12 21 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 52 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %minAngle.13 = local;
+        symbol [ minAngle %minAngle.13 52 12 20 ];
+        %tmp.106 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.106 52 23 32 ];
+        symbol [ min %tmp.107 52 33 36 ];
+        %tmp.107 = getv %tmp.106 :min;
+        %tmp.108 = 6;
+        %tmp.109 = mul %tmp.107 %tmp.108;
+        lputv %minAngle.13 %tmp.109;
+        symbol [ minAngle %minAngle.13 52 12 20 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 54 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %hourRad.14 = local;
+        symbol [ hourRad %hourRad.14 54 12 19 ];
+        %tmp.110 = lgetv %hourAngle.12;
+        symbol [ hourAngle %tmp.110 54 23 32 ];
+        %tmp.111 = 90;
+        %tmp.112 = sub %tmp.110 %tmp.111;
+        symbol [ Math %tmp.114 54 41 45 ];
+        %tmp.114 = getv ? :Math;
+        symbol [ PI %tmp.115 54 46 48 ];
+        %tmp.115 = getv %tmp.114 :PI;
+        %tmp.116 = mul %tmp.112 %tmp.115;
+        %tmp.117 = 180;
+        %tmp.118 = div %tmp.116 %tmp.117;
+        lputv %hourRad.14 %tmp.118;
+        symbol [ hourRad %hourRad.14 54 12 19 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 55 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %minRad.15 = local;
+        symbol [ minRad %minRad.15 55 12 18 ];
+        %tmp.119 = lgetv %minAngle.13;
+        symbol [ minAngle %tmp.119 55 22 30 ];
+        %tmp.120 = 90;
+        %tmp.121 = sub %tmp.119 %tmp.120;
+        symbol [ Math %tmp.123 55 39 43 ];
+        %tmp.123 = getv ? :Math;
+        symbol [ PI %tmp.124 55 44 46 ];
+        %tmp.124 = getv %tmp.123 :PI;
+        %tmp.125 = mul %tmp.121 %tmp.124;
+        %tmp.126 = 180;
+        %tmp.127 = div %tmp.125 %tmp.126;
+        lputv %minRad.15 %tmp.127;
+        symbol [ minRad %minRad.15 55 12 18 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 57 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %hourX.16 = local;
+        symbol [ hourX %hourX.16 57 12 17 ];
+        %tmp.128 = lgetv %centerX.9;
+        symbol [ centerX %tmp.128 57 20 27 ];
+        %tmp.129 = lgetv %radius.11;
+        symbol [ radius %tmp.129 57 30 36 ];
+        %tmp.130 = 0.65;
+        %tmp.131 = mul %tmp.129 %tmp.130;
+        symbol [ Math %tmp.133 57 46 50 ];
+        %tmp.133 = getv ? :Math;
+        symbol [ cos %tmp.134 57 51 54 ];
+        %tmp.134 = getv function %tmp.133 :cos;
+        %tmp.135 = lgetv %hourRad.14;
+        symbol [ hourRad %tmp.135 57 55 62 ];
+        %tmp.136 = invoke %tmp.133 %tmp.134(%tmp.135);
+        %tmp.137 = mul %tmp.131 %tmp.136;
+        %tmp.138 = add %tmp.128 %tmp.137;
+        lputv %hourX.16 %tmp.138;
+        symbol [ hourX %hourX.16 57 12 17 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 58 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %hourY.17 = local;
+        symbol [ hourY %hourY.17 58 12 17 ];
+        %tmp.139 = lgetv %centerY.10;
+        symbol [ centerY %tmp.139 58 20 27 ];
+        %tmp.140 = lgetv %radius.11;
+        symbol [ radius %tmp.140 58 30 36 ];
+        %tmp.141 = 0.65;
+        %tmp.142 = mul %tmp.140 %tmp.141;
+        symbol [ Math %tmp.144 58 46 50 ];
+        %tmp.144 = getv ? :Math;
+        symbol [ sin %tmp.145 58 51 54 ];
+        %tmp.145 = getv function %tmp.144 :sin;
+        %tmp.146 = lgetv %hourRad.14;
+        symbol [ hourRad %tmp.146 58 55 62 ];
+        %tmp.147 = invoke %tmp.144 %tmp.145(%tmp.146);
+        %tmp.148 = mul %tmp.142 %tmp.147;
+        %tmp.149 = add %tmp.139 %tmp.148;
+        lputv %hourY.17 %tmp.149;
+        symbol [ hourY %hourY.17 58 12 17 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 59 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %minX.18 = local;
+        symbol [ minX %minX.18 59 12 16 ];
+        %tmp.150 = lgetv %centerX.9;
+        symbol [ centerX %tmp.150 59 19 26 ];
+        %tmp.151 = lgetv %radius.11;
+        symbol [ radius %tmp.151 59 29 35 ];
+        symbol [ Math %tmp.153 59 38 42 ];
+        %tmp.153 = getv ? :Math;
+        symbol [ cos %tmp.154 59 43 46 ];
+        %tmp.154 = getv function %tmp.153 :cos;
+        %tmp.155 = lgetv %minRad.15;
+        symbol [ minRad %tmp.155 59 47 53 ];
+        %tmp.156 = invoke %tmp.153 %tmp.154(%tmp.155);
+        %tmp.157 = mul %tmp.151 %tmp.156;
+        %tmp.158 = add %tmp.150 %tmp.157;
+        lputv %minX.18 %tmp.158;
+        symbol [ minX %minX.18 59 12 16 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 60 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %minY.19 = local;
+        symbol [ minY %minY.19 60 12 16 ];
+        %tmp.159 = lgetv %centerY.10;
+        symbol [ centerY %tmp.159 60 19 26 ];
+        %tmp.160 = lgetv %radius.11;
+        symbol [ radius %tmp.160 60 29 35 ];
+        symbol [ Math %tmp.162 60 38 42 ];
+        %tmp.162 = getv ? :Math;
+        symbol [ sin %tmp.163 60 43 46 ];
+        %tmp.163 = getv function %tmp.162 :sin;
+        %tmp.164 = lgetv %minRad.15;
+        symbol [ minRad %tmp.164 60 47 53 ];
+        %tmp.165 = invoke %tmp.162 %tmp.163(%tmp.164);
+        %tmp.166 = mul %tmp.160 %tmp.165;
+        %tmp.167 = add %tmp.159 %tmp.166;
+        lputv %minY.19 %tmp.167;
+        symbol [ minY %minY.19 60 12 16 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 63 8 ]
+        %tmp.168 = lgetv %dc;
+        symbol [ dc %tmp.168 63 8 10 ];
+        symbol [ setColor %tmp.169 63 11 19 ];
+        %tmp.169 = getv function %tmp.168 :setColor;
+        symbol [ Graphics %tmp.170 63 20 28 ];
+        %tmp.170 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.171 63 29 40 ];
+        %tmp.171 = getv %tmp.170 :COLOR_WHITE;
+        symbol [ Graphics %tmp.172 63 42 50 ];
+        %tmp.172 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.173 63 51 62 ];
+        %tmp.173 = getv %tmp.172 :COLOR_BLACK;
+        invoke %tmp.168 %tmp.169(%tmp.171, %tmp.173);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 64 8 ]
+        %tmp.174 = lgetv %dc;
+        symbol [ dc %tmp.174 64 8 10 ];
+        symbol [ drawCircle %tmp.175 64 11 21 ];
+        %tmp.175 = getv function %tmp.174 :drawCircle;
+        %tmp.176 = lgetv %centerX.9;
+        symbol [ centerX %tmp.176 64 22 29 ];
+        %tmp.177 = lgetv %centerY.10;
+        symbol [ centerY %tmp.177 64 31 38 ];
+        %tmp.178 = lgetv %radius.11;
+        symbol [ radius %tmp.178 64 40 46 ];
+        invoke %tmp.174 %tmp.175(%tmp.176, %tmp.177, %tmp.178);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 65 8 ]
+        %tmp.179 = lgetv %dc;
+        symbol [ dc %tmp.179 65 8 10 ];
+        symbol [ fillCircle %tmp.180 65 11 21 ];
+        %tmp.180 = getv function %tmp.179 :fillCircle;
+        %tmp.181 = lgetv %centerX.9;
+        symbol [ centerX %tmp.181 65 22 29 ];
+        %tmp.182 = lgetv %centerY.10;
+        symbol [ centerY %tmp.182 65 31 38 ];
+        %tmp.183 = 2;
+        invoke %tmp.179 %tmp.180(%tmp.181, %tmp.182, %tmp.183);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 66 8 ]
+        %tmp.184 = lgetv %dc;
+        symbol [ dc %tmp.184 66 8 10 ];
+        symbol [ drawLine %tmp.185 66 11 19 ];
+        %tmp.185 = getv function %tmp.184 :drawLine;
+        %tmp.186 = lgetv %centerX.9;
+        symbol [ centerX %tmp.186 66 20 27 ];
+        %tmp.187 = lgetv %centerY.10;
+        symbol [ centerY %tmp.187 66 29 36 ];
+        %tmp.188 = lgetv %hourX.16;
+        symbol [ hourX %tmp.188 66 38 43 ];
+        %tmp.189 = lgetv %hourY.17;
+        symbol [ hourY %tmp.189 66 45 50 ];
+        invoke %tmp.184 %tmp.185(%tmp.186, %tmp.187, %tmp.188, %tmp.189);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 67 8 ]
+        %tmp.190 = lgetv %dc;
+        symbol [ dc %tmp.190 67 8 10 ];
+        symbol [ drawLine %tmp.191 67 11 19 ];
+        %tmp.191 = getv function %tmp.190 :drawLine;
+        %tmp.192 = lgetv %centerX.9;
+        symbol [ centerX %tmp.192 67 20 27 ];
+        %tmp.193 = lgetv %centerY.10;
+        symbol [ centerY %tmp.193 67 29 36 ];
+        %tmp.194 = lgetv %minX.18;
+        symbol [ minX %tmp.194 67 38 42 ];
+        %tmp.195 = lgetv %minY.19;
+        symbol [ minY %tmp.195 67 44 48 ];
+        invoke %tmp.190 %tmp.191(%tmp.192, %tmp.193, %tmp.194, %tmp.195);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 69 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %secAngle.20 = local;
+        symbol [ secAngle %secAngle.20 69 12 20 ];
+        %tmp.196 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.196 69 23 32 ];
+        symbol [ sec %tmp.197 69 33 36 ];
+        %tmp.197 = getv %tmp.196 :sec;
+        %tmp.198 = 6;
+        %tmp.199 = mul %tmp.197 %tmp.198;
+        lputv %secAngle.20 %tmp.199;
+        symbol [ secAngle %secAngle.20 69 12 20 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 70 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %secRad.21 = local;
+        symbol [ secRad %secRad.21 70 12 18 ];
+        %tmp.200 = lgetv %secAngle.20;
+        symbol [ secAngle %tmp.200 70 22 30 ];
+        %tmp.201 = 90;
+        %tmp.202 = sub %tmp.200 %tmp.201;
+        symbol [ Math %tmp.204 70 39 43 ];
+        %tmp.204 = getv ? :Math;
+        symbol [ PI %tmp.205 70 44 46 ];
+        %tmp.205 = getv %tmp.204 :PI;
+        %tmp.206 = mul %tmp.202 %tmp.205;
+        %tmp.207 = 180;
+        %tmp.208 = div %tmp.206 %tmp.207;
+        lputv %secRad.21 %tmp.208;
+        symbol [ secRad %secRad.21 70 12 18 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 71 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %secX.22 = local;
+        symbol [ secX %secX.22 71 12 16 ];
+        %tmp.209 = lgetv %centerX.9;
+        symbol [ centerX %tmp.209 71 19 26 ];
+        %tmp.210 = lgetv %radius.11;
+        symbol [ radius %tmp.210 71 29 35 ];
+        %tmp.211 = 1.15;
+        %tmp.212 = mul %tmp.210 %tmp.211;
+        symbol [ Math %tmp.214 71 45 49 ];
+        %tmp.214 = getv ? :Math;
+        symbol [ cos %tmp.215 71 50 53 ];
+        %tmp.215 = getv function %tmp.214 :cos;
+        %tmp.216 = lgetv %secRad.21;
+        symbol [ secRad %tmp.216 71 54 60 ];
+        %tmp.217 = invoke %tmp.214 %tmp.215(%tmp.216);
+        %tmp.218 = mul %tmp.212 %tmp.217;
+        %tmp.219 = add %tmp.209 %tmp.218;
+        lputv %secX.22 %tmp.219;
+        symbol [ secX %secX.22 71 12 16 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 72 8 ]
+        [ "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_start" "_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop" ]
+        %secY.23 = local;
+        symbol [ secY %secY.23 72 12 16 ];
+        %tmp.220 = lgetv %centerY.10;
+        symbol [ centerY %tmp.220 72 19 26 ];
+        %tmp.221 = lgetv %radius.11;
+        symbol [ radius %tmp.221 72 29 35 ];
+        %tmp.222 = 1.15;
+        %tmp.223 = mul %tmp.221 %tmp.222;
+        symbol [ Math %tmp.225 72 45 49 ];
+        %tmp.225 = getv ? :Math;
+        symbol [ sin %tmp.226 72 50 53 ];
+        %tmp.226 = getv function %tmp.225 :sin;
+        %tmp.227 = lgetv %secRad.21;
+        symbol [ secRad %tmp.227 72 54 60 ];
+        %tmp.228 = invoke %tmp.225 %tmp.226(%tmp.227);
+        %tmp.229 = mul %tmp.223 %tmp.228;
+        %tmp.230 = add %tmp.220 %tmp.229;
+        lputv %secY.23 %tmp.230;
+        symbol [ secY %secY.23 72 12 16 ];
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 74 8 ]
+        %tmp.231 = lgetv %dc;
+        symbol [ dc %tmp.231 74 8 10 ];
+        symbol [ setColor %tmp.232 74 11 19 ];
+        %tmp.232 = getv function %tmp.231 :setColor;
+        symbol [ Graphics %tmp.233 74 20 28 ];
+        %tmp.233 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.234 74 29 38 ];
+        %tmp.234 = getv %tmp.233 :COLOR_RED;
+        symbol [ Graphics %tmp.235 74 40 48 ];
+        %tmp.235 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.236 74 49 60 ];
+        %tmp.236 = getv %tmp.235 :COLOR_BLACK;
+        invoke %tmp.231 %tmp.232(%tmp.234, %tmp.236);
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 75 8 ]
+        %tmp.237 = lgetv %dc;
+        symbol [ dc %tmp.237 75 8 10 ];
+        symbol [ drawLine %tmp.238 75 11 19 ];
+        %tmp.238 = getv function %tmp.237 :drawLine;
+        %tmp.239 = lgetv %centerX.9;
+        symbol [ centerX %tmp.239 75 20 27 ];
+        %tmp.240 = lgetv %centerY.10;
+        symbol [ centerY %tmp.240 75 29 36 ];
+        %tmp.241 = lgetv %secX.22;
+        symbol [ secX %tmp.241 75 38 42 ];
+        %tmp.242 = lgetv %secY.23;
+        symbol [ secY %tmp.242 75 44 48 ];
+        invoke %tmp.237 %tmp.238(%tmp.239, %tmp.240, %tmp.241, %tmp.242);
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_24_40_76_4_stop:
+    }
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 81; @symbol_functiondef = [onHide,81,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 85; @symbol_functiondef = [onExitSleep,85,13,24]; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 89; @symbol_functiondef = [onEnterSleep,89,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+    [ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 92; @symbol_functiondef = [getUpdateRate,92,13,26]; ]
+    function getUpdateRate() {
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_92_29_94_4_start:
+[ "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" 93 8 ]
+        %tmp.1 = 1000;
+        ret %tmp.1;
+_Users_roneil_garmin_tenet_tenet_source_tenetView_mc_92_29_94_4_stop:
+    }
+}
+[ @file = "/Users/roneil/garmin-tenet/tenet/source/tenetView.mc"; @line = 1; ]
+<init> {
+}

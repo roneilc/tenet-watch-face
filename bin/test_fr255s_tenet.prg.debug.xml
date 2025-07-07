@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/roneil/garmin-tenet/tenet/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetApp.mc" id="1" lineNum="5" parent="globals/tenetApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetApp.mc" id="2" lineNum="26" parent="globals" pc="268435472" symbol="getApp"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetApp.mc" id="2" lineNum="27" parent="globals" pc="268435482" symbol="getApp"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/bin/gen/006-B3993-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="4" lineNum="6" parent="globals/tenetView" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetApp.mc" id="5" lineNum="12" parent="globals/tenetApp" pc="268435525" symbol="onStart"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetApp.mc" id="6" lineNum="20" parent="globals/tenetApp" pc="268435528" symbol="getInitialView"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetApp.mc" id="6" lineNum="21" parent="globals/tenetApp" pc="268435530" symbol="getInitialView"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetApp.mc" id="7" lineNum="7" parent="globals/tenetApp" pc="268435556" symbol="initialize"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetApp.mc" id="7" lineNum="8" parent="globals/tenetApp" pc="268435558" symbol="initialize"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetApp.mc" id="8" lineNum="16" parent="globals/tenetApp" pc="268435571" symbol="onStop"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="11" lineNum="95" parent="globals/tenetView" pc="268435574" symbol="getUpdateRate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="11" lineNum="96" parent="globals/tenetView" pc="268435576" symbol="getUpdateRate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="12" lineNum="13" parent="globals/tenetView" pc="268435580" symbol="onLayout"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="12" lineNum="14" parent="globals/tenetView" pc="268435582" symbol="onLayout"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="14" lineNum="8" parent="globals/tenetView" pc="268435616" symbol="initialize"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="14" lineNum="9" parent="globals/tenetView" pc="268435618" symbol="initialize"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="24" parent="globals/tenetView" pc="268435631" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="25" parent="globals/tenetView" pc="268435634" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="27" parent="globals/tenetView" pc="268435654" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="28" parent="globals/tenetView" pc="268435666" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="29" parent="globals/tenetView" pc="268435696" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="30" parent="globals/tenetView" pc="268435746" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="32" parent="globals/tenetView" pc="268435770" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="33" parent="globals/tenetView" pc="268435774" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="35" parent="globals/tenetView" pc="268435786" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="36" parent="globals/tenetView" pc="268435800" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="39" parent="globals/tenetView" pc="268435812" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="40" parent="globals/tenetView" pc="268435845" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="42" parent="globals/tenetView" pc="268435851" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="45" parent="globals/tenetView" pc="268435887" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="46" parent="globals/tenetView" pc="268435899" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="47" parent="globals/tenetView" pc="268435911" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="50" parent="globals/tenetView" pc="268435927" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="51" parent="globals/tenetView" pc="268435939" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="53" parent="globals/tenetView" pc="268435951" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="54" parent="globals/tenetView" pc="268435955" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="55" parent="globals/tenetView" pc="268435982" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="57" parent="globals/tenetView" pc="268435993" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="58" parent="globals/tenetView" pc="268436010" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="60" parent="globals/tenetView" pc="268436027" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="61" parent="globals/tenetView" pc="268436055" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="62" parent="globals/tenetView" pc="268436083" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="63" parent="globals/tenetView" pc="268436105" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="66" parent="globals/tenetView" pc="268436127" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="67" parent="globals/tenetView" pc="268436143" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="68" parent="globals/tenetView" pc="268436159" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="69" parent="globals/tenetView" pc="268436175" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="70" parent="globals/tenetView" pc="268436193" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="72" parent="globals/tenetView" pc="268436211" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="73" parent="globals/tenetView" pc="268436222" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="74" parent="globals/tenetView" pc="268436239" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="75" parent="globals/tenetView" pc="268436267" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="77" parent="globals/tenetView" pc="268436295" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/source/tenetView.mc" id="16" lineNum="78" parent="globals/tenetView" pc="268436311" symbol="onUpdate"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/bin/gen/006-B3993-00/source/Rez.mcgen" id="17" lineNum="14" parent="globals/Rez/Layouts" pc="268436330" symbol="WatchFace"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/bin/gen/006-B3993-00/source/Rez.mcgen" id="17" lineNum="15" parent="globals/Rez/Layouts" pc="268436341" symbol="WatchFace"/>
+        <entry filename="/Users/roneil/garmin-tenet/tenet/bin/gen/006-B3993-00/source/Rez.mcgen" id="17" lineNum="17" parent="globals/Rez/Layouts" pc="268436435" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="10" symbol="ArabicDial"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="12" symbol="AppName"/>
+        <entry id="7" object="true" symbol="tenetView"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="11" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="6" object="true" symbol="tenetApp"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8" module="true" symbol="Layouts"/>
+        <entry id="9" method="true" symbol="getUpdateRate"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435615" name="dc" stackId="1" startPc="268435580"/>
+        <entry arg="true" endPc="268436329" name="dc" stackId="1" startPc="268435631"/>
+        <entry endPc="268436328" name="clockTime" stackId="2" startPc="268435634"/>
+        <entry endPc="268436328" name="hour12" stackId="3" startPc="268435634"/>
+        <entry endPc="268436328" name="timeString" stackId="4" startPc="268435634"/>
+        <entry endPc="268436328" name="view" stackId="5" startPc="268435634"/>
+        <entry endPc="268436328" name="font" stackId="6" startPc="268435634"/>
+        <entry endPc="268436328" name="dialBmp" stackId="7" startPc="268435634"/>
+        <entry endPc="268436328" name="bmpX" stackId="8" startPc="268435634"/>
+        <entry endPc="268436328" name="bmpY" stackId="9" startPc="268435634"/>
+        <entry endPc="268436328" name="centerX" stackId="10" startPc="268435634"/>
+        <entry endPc="268436328" name="centerY" stackId="11" startPc="268435634"/>
+        <entry endPc="268436328" name="radius" stackId="12" startPc="268435634"/>
+        <entry endPc="268436328" name="hourAngle" stackId="13" startPc="268435634"/>
+        <entry endPc="268436328" name="minAngle" stackId="14" startPc="268435634"/>
+        <entry endPc="268436328" name="hourRad" stackId="15" startPc="268435634"/>
+        <entry endPc="268436328" name="minRad" stackId="16" startPc="268435634"/>
+        <entry endPc="268436328" name="hourX" stackId="17" startPc="268435634"/>
+        <entry endPc="268436328" name="hourY" stackId="18" startPc="268435634"/>
+        <entry endPc="268436328" name="minX" stackId="19" startPc="268435634"/>
+        <entry endPc="268436328" name="minY" stackId="20" startPc="268435634"/>
+        <entry endPc="268436328" name="secAngle" stackId="21" startPc="268435634"/>
+        <entry endPc="268436328" name="secRad" stackId="22" startPc="268435634"/>
+        <entry endPc="268436328" name="secX" stackId="23" startPc="268435634"/>
+        <entry endPc="268436328" name="secY" stackId="24" startPc="268435634"/>
+        <entry arg="true" endPc="268436444" name="dc" stackId="1" startPc="268436330"/>
+        <entry endPc="268436444" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268436341"/>
+    </localVars>
+    <deviceInfo deviceVersion="0ed082a335bbf00c12e5da810e92d4f89288090c" partNumber="006-B3993-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="ArabicDial"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/tenetApp" offset="125" parentId="globals" symbolId="tenetApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="196" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/tenetView" offset="249" parentId="globals" symbolId="tenetView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="356" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="400" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="435" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="tenetApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="tenetView" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435527" name="onStart" parent="tenetApp" startPc="268435525">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435555" name="getInitialView" parent="tenetApp" startPc="268435528">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435570" name="initialize" parent="tenetApp" startPc="268435556">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435573" name="onStop" parent="tenetApp" startPc="268435571">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="tenetView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="tenetView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435579" name="getUpdateRate" parent="tenetView" startPc="268435574">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435615" name="onLayout" parent="tenetView" startPc="268435580">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="tenetView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435630" name="initialize" parent="tenetView" startPc="268435616">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="tenetView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436329" name="onUpdate" parent="tenetView" startPc="268435631">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436444" name="WatchFace" parent="Layouts" startPc="268436330">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
